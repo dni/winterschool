@@ -11,9 +11,7 @@
     "test": "gulp test",
     "start": "gulp serve",
     "build": "gulp build",
-    "gh-cname": "touch dist/CNAME && echo candy.600.wtf >> dist/CNAME",
-    "gh-deploy": "git push fork :gh-pages && git subtree push --prefix dist fork gh-pages",
-    "gh-deploy-init": "git push fork && git subtree push --prefix dist fork gh-pages"
+    "gh-cname": "touch CNAME && echo candy.600.wtf >> CNAME"
   },
   "author": {
     "name": "Hakim El Hattab",
