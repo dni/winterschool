@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>candymachine workshop</title>
+		<title>winterschool workshop</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -19,55 +19,17 @@
             <div class="slides">
                 <section>
                     <section>
-                        <h3>candymachine workshop</h3>
-                        <p>lnurldevice, bitcoinswitch, lnbits</p>
-                        <h2>🍬</h1>
-                        <p>
-                        <small>erstellt von <a href="https://twitter.com/dnilabs">dni</a>, thanks to <a href="https://ereignishorizont.xyz/bitcoinswitch/">ereignishorizont</a></small><br />
-                        <img style="max-width: 100px;" src="dist/qr-lnbits-url.png" alt="">
-                        <br />
-                        <small>
-                            <a href="https://candy.600.wtf">Link: https://candy.600.wtf</a><br />
-                            <a href="https://github.com/dni/candymachine-workshop/issues">Fragen: https://github.com/dni/candymachine-workshop/issues</a>
-                        </small>
-                        <br />
-                        <small>Blockzeit: 774919</small>
-                        </p>
-                    </section>
-                    <section><img src="dist/flyer.jpg" alt=""></section>
-                </section>
-                <section>
-                    <h3>Overview</h3>
-                    <ul>
-                        <li>Grundlagen</li>
-                        <li>LNbits Wallet / LNURLdevice erstellen</li>
-                        <li>bitcoinswitch installiern mit <a href="https://lnbits.github.io/bitcoinswitch/installer/index.html">webinstaller</a></li>
-                        <li>bitcoinswitch in Candymachine einbauen</li>
-                    </ul>
-                </section>
-                <section>
-                    <section>
                         <h3>bitcoinswitch</h3>
                         <img src="dist/imgs/bitcoinswitch/bitcoinswitch-1.png" alt="">
                         <a href="https://github.com/lnbits/bitcoinSwitch">
                             <img src="dist/imgs/bitcoinswitch/bitcoinswitch-2.png" alt="">
                         </a>
-                        <p>Sachen einschalten via Lightning</p>
                     </section>
                     <section>
                         <h3>Elektronik</h3>
                         <img src="dist/imgs/electronics.jpg" alt="">
                         <br />
                         <p>thanks to <a href="https://ereignishorizont.xyz/bitcoinswitch/">ereignishorizont.xyz</a></p>
-                    </section>
-                    <section>
-                        <h3>Ablauf</h3>
-                        <ol>
-                            <li>bitcoinswitch verbindet sich via WLAN auf LNbits Server.</li>
-                            <li>LNbits Server erstellt Lightning Invoices via LNURL Link.</li>
-                            <li>Invoice wird bezahlt, LNbits Server sendet per Websocket ein Signal an den bitcoinswitch</li>
-                            <li>bitcoinswitch schaltet Relay ein</li>
-                        </ol>
                     </section>
                 </section>
                 <section>
@@ -79,20 +41,13 @@
                                 <img style="max-width: 200px;" src="dist/qr-lnbits-url.png" alt="">
                                 <br />
                                 <small>
-                                    <a href="https://legend.lnbits.com">https://legend.lnbits.com</a>
-                                </small>
-                            </div>
-                            <div style="padding: 0 12px;">
-                                <img style="max-width: 200px;" src="dist/qr-b1tco1n-url.png" alt="">
-                                <br />
-                                <small>
-                                    <a href="https://lnbits.b1tco1n.org">https://lnbits.b1tco1n.org</a>
+                                    <a href="https://demo.lnbits.com">https://demo.lnbits.com</a>
                                 </small>
                             </div>
                         </div>
                     </section>
                     <section>
-                        <h4>Wallet erstellen</h4>
+                        <h4>Create wallet</h4>
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch01.webp" alt="">
                     </section>
                     <section>
@@ -100,15 +55,15 @@
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch02.webp" alt="">
                     </section>
                     <section>
-                        <h4>LNURLdevice Extension aktivieren</h4>
+                        <h4>LNURLdevice Extension</h4>
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch03.webp" alt="">
                     </section>
                     <section>
-                        <h4>LNURLdevice erstellen</h4>
+                        <h4>Create LNURLdevice</h4>
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch04.webp" alt="">
                     </section>
                     <section>
-                        <h4>LNURLdevice konfiguriern</h4>
+                        <h4>Configure LNURLdevice</h4>
                         <h5>GPIO pin 22!</h5>
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch05.webp" alt="">
                     </section>
@@ -117,83 +72,20 @@
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch06.webp" alt="">
                     </section>
                     <section>
-                        <h3>LNURL anzeigen</h3>
+                        <h3>Show LNURL</h3>
                         <img src="dist/imgs/bitcoinswitch/bitcoinSwitch07.webp" alt="">
                     </section>
                 </section>
                 <section>
                     <section>
-                        <h3>bitcoinswitch installieren</h3>
-                        <img style="max-width: 200px;" src="dist/qr-lnbits-installer.png" alt="">
-                        <br />
-                       <a href="https://lnbits.github.io/bitcoinswitch/installer/index.html">https://lnbits.github.io/bitcoinswitch/installer/index.html</a></small></li>
-                    </section>
-                    <section>
-                        <h3>ESP32 flashen</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch08.webp" alt="">
-                    </section>
-                    <section>
-                        <h3>USB Webserial verbinden</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch09.webp" alt="">
-                    </section>
-                    <section>
-                        <h3>Firmware installieren</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch10.webp" alt="">
-                    </section>
-                    <section>
-                        <h3>ESP32 formatieren</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch11.webp" alt="">
-                    </section>
-                    <section>
-                        <h3>Installationsprozess</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch12.webp" alt="">
-                    </section>
-                    <section>
-                        <h3>Logs</h3>
-                        <img src="dist/imgs/bitcoinswitch/bitcoinSwitch13.webp" alt="">
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h3>Candymachine assembly</h3>
-                        <img src="dist/imgs/assembly5.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly111.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly21.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly22.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly12.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly222.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly223.jpg" alt="">
-                    </section>
-                    <section>
-                        <img src="dist/imgs/assembly50.jpg" alt="">
-                    </section>
-                </section>
-                <section>
-                    <section>
                         <h3>more infos</h3>
-                        <ul><li>Twitter Video kurz, mit Infos <a href="https://twitter.com/arcbtc/status/1521976529588305921">link</a></li>
-                            <li>Video Tutorial zum bitcoinSwitch <a href="https://www.youtube.com/watch?v=FeoIwTjv3YM">link</a></li>
-                            <li>Die GitHub Seite vom bitcoinSwitch <a href="https://github.com/lnbits/bitcoinswitch">link</a></li>
-                            <li>Die GitHub Seite von LNbits <a href="https://github.com/lnbits/lnbits-legend">link</a></li>
+                        <ul>
+                            <li>LNbits DEMO <a href="https://demo.lnbits.com">link</a></li>
+                            <li>GitHub bitcoinSwitch <a href="https://github.com/lnbits/bitcoinswitch">link</a></li>
+                            <li>GitHub bitcoinSwitch Extension <a href="https://github.com/lnbits/bitcoinswitch_extension">link</a></li>
+                            <li>GitHub LNbits <a href="https://github.com/lnbits/lnbits">link</a></li>
                             <li>MakerBits auf Youtube: <a href="https://www.youtube.com/@makerbits7700">MakerBits</a></li>
-                            <li>LNbits Shop: <a href="https://shop.lnbits.com/">shop.lnbits.com</a></li>
                         </ul>
-                    </section>
-                    <section>
-                        <img src="dist/imgs/mms.jpeg" alt="">
                     </section>
                 </section>
 
